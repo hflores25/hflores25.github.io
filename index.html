@@ -35,6 +35,8 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#work">Research</a></li>
+								<li><a href="#tools">Tools</a></li>
+								<li><a href="#photos">Photos</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -46,9 +48,8 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main"><img src="photos/Basin.jpg" alt="" /></span>
 								<p>Hey, thanks for stopping by! I'm Humberto &mdash; a PhD candidate at UC Merced working at the intersection of hydrology, applied geophysics, and agricultural water management.</p>
-								<p>Growing up in California's North Coast wine country gave me an early appreciation for how deeply agriculture depends on the natural environment &mdash; and how much work it takes to keep that relationship sustainable. That's shaped everything I've pursued since.</p>
 								<p>This site is a running record of my <a href="#work">research and work</a>. If you want to connect or catch a typo, drop me a <a href="#contact">message</a>.</p>
 							</article>
 
@@ -104,7 +105,93 @@
 								</ul>
 							</article>
 
-						<!-- Contact -->
+						<!-- Tools -->
+						<article id="tools">
+							<h2 class="major">Tools</h2>
+							<p>Some web apps I helped develop for Multibenefit Land Repurposing suitability assessment across California's San Joaquin Valley.</p>
+
+							<!-- Embedded app -->
+							<h3>Merced Subbasin MLRP Suitability</h3>
+							<p>An interactive geospatial toolkit for exploring Multibenefit Land Repurposing Program (MLRP) suitability in the Merced subbasin.</p>
+							<div style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden; border-radius: 4px; margin-bottom: 1.5em;">
+								<iframe
+									src="https://seeds.shinyapps.io/MercedMLRP/"
+									style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+									allowfullscreen
+									loading="lazy"
+									title="Merced MLRP Suitability App">
+								</iframe>
+							</div>
+
+							<!-- Linked apps -->
+							<h3>Additional Tools</h3>
+							<p></p>
+							<ul>
+								<li>
+									<strong>Tule Subbasin MLRP Suitability</strong><br />
+									Geospatial decision-support toolkit for the Tule subbasin.<br />
+									<a href="http://169.236.229.50:3838/Tule_OpenApp/" target="_blank" rel="noopener">Open app &rarr;</a>
+								</li>
+								<li style="margin-top: 0.75em;">
+									<strong>Kaweah Subbasin MLRP Suitability</strong><br />
+									Geospatial decision-support toolkit for the Kaweah subbasin.<br />
+									<a href="http://169.236.229.50:3838/Kaweah_OpenApp/" target="_blank" rel="noopener">Open app &rarr;</a>
+								</li>
+							</ul>
+						</article>
+
+					<!-- Photos -->
+						<article id="photos">
+							<h2 class="major">Photos</h2>
+							<p>A few images from the field and beyond.</p>
+
+							<!-- Photo grid -->
+							<style>
+								.photo-grid {
+									display: grid;
+									grid-template-columns: repeat(2, 1fr);
+									gap: 0.75em;
+									margin-bottom: 1.5em;
+								}
+								.photo-grid a {
+									display: block;
+									overflow: hidden;
+									border-radius: 4px;
+									line-height: 0;
+								}
+								.photo-grid img {
+									width: 100%;
+									height: 160px;
+									object-fit: cover;
+									transition: transform 0.3s ease;
+									margin: 0;
+								}
+								.photo-grid a:hover img {
+									transform: scale(1.04);
+								}
+							</style>
+
+							<div class="photo-grid">
+								<!-- Replace each src with your actual photo paths, e.g. photos/fieldwork1.jpg -->
+								<!-- Add or remove <a> blocks to match how many photos you have -->
+								<a href="photos/Basin.jpg" target="_blank">
+									<img src="photos/Basin.jpg" alt="Basin" />
+								</a>
+								<a href="photos/Gauge.jpg" target="_blank">
+									<img src="photos/Gauge.jpg" alt="Gauge" />
+								</a>
+								<a href="photos/Neighbors.jpg" target="_blank">
+									<img src="photos/Neighbors.jpg" alt="Neighbors" />
+								</a>
+								<a href="photos/Sierra.jpg" target="_blank">
+									<img src="photos/Sierra.jpg" alt="Sierra" />
+								</a>
+							</div>
+
+							<p style="font-size: 0.85em; opacity: 0.7;">Taken on Nikon ZF 26mm lense</p>
+						</article>
+
+					<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<form action="https://formspree.io/f/mgvopdqo" method="POST">
